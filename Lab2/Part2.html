@@ -10,8 +10,7 @@
 	</head>
 	<body>
 		<script src="../three.js-master/build/three.js"></script>
-		<script 
-src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
+		<script src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
 		<script>
 		    var scene = new THREE.Scene();
 		    var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
@@ -22,15 +21,17 @@ src="../three.js-master/examples/js/loaders/GLTFLoader.js"></script>
 
 		    var light = new THREE.PointLight(0xffffff, 1, 1000);
 			light.position.set(50, 50, 50);
+			light.rotation.x = -90;
 			scene.add(light);
 
-			var light2 = new THREE.PointLight(0xfacade, 1, 1000);
+			var light2 = new THREE.PointLight(0xfacade, 2, 1000);
 			light2.position.set(-50, 50, 50);
 			scene.add(light2);
 
 			var loader = new THREE.GLTFLoader();
 			loader.load('rabbit.glb', function (gltf) {
 			gltf.scene.position.x = -50;
+			gltf.scene.rotation.y = 90;
 			scene.add(gltf.scene);
 			}, function (xhr) {
 			console.log((xhr.loaded / xhr.total * 100) + '% loaded' );
