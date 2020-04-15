@@ -21,10 +21,19 @@ window.innerWidth/window.innerHeight, 0.1, 1000);
 			camera.position.z = 5;
 			
 			// setup the cube
-var geometry = new THREE.BoxGeometry();
-      			var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-      			var cube = new THREE.Mesh( geometry, material );
-     			scene.add(cube);
+			var geometry = new THREE.BoxGeometry();
+      		var material = new THREE.MeshPhongMaterial( { color: 0xdddddd, specular: 0x00ff00, shininess: 30 });
+
+      		var cube = new THREE.Mesh( geometry, material );
+     		scene.add(cube);
+
+     		// setup the cube
+			var geometry2 = new THREE.BoxGeometry();
+      		var material2 = new THREE.MeshPhongMaterial( { color: 0xffaa00, specular: 0x666666, emissive: 0xfa0000, shininess: 10, opacity: 0.75, transparent: true } );
+
+      		var cube2 = new THREE.Mesh( geometry2, material2);
+     		scene.add(cube2);
+     		geometry2.translate(3, 0, 0);
 
 			// add the light
 			var light = new THREE.PointLight(0xffffff, 1, 1000);
@@ -35,6 +44,8 @@ var geometry = new THREE.BoxGeometry();
 				requestAnimationFrame(animate);
 				geometry.rotateX(0.01);
 				geometry.rotateY(0.01);
+
+				geometry2.rotateX(-0.01);
 				renderer.render(scene, camera);
 			}
 			animate();
