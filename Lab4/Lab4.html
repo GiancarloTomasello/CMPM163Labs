@@ -33,9 +33,8 @@
 		<script id="vertexShaderTile" type="x-shader/x-vertex">
 			// code for vertex shader
 			varying vec2 vUv;
-			varying vec2 vUv2;
 			void main() {
-				  vUv = uv/0.5;
+				  vUv = uv;
 				 vec4 modelViewPosition = modelViewMatrix * vec4(position, 1.0);
 			  gl_Position = projectionMatrix * modelViewPosition;
 			}
@@ -44,10 +43,11 @@
 		<script id="fragmentShaderTile" type="x-shader/x-fragment">
 			// code for fragment shader
 			uniform sampler2D texture1;
+			uniform sampler2D textureN;
 			varying vec2 vUv;
-			varying vec2 vUv2;
 			void main() {
-			    gl_FragColor = texture2D(texture1, vUv);
+				//texture1.wrapS = THREE.RepeatWrapping;
+			    gl_FragColor = texture2D(texture1, vUv / 0.25);
 
 			}
 		</script>
@@ -109,8 +109,17 @@
 			}
 
 			function addTilingCube() {
-				
-				var uniforms = {texture1: { type: "t", value: THREE.ImageUtils.loadTexture("textures/176.jpg")}};
+				var texture = THREE.ImageUtils.loadTexture("textures/176.jpg");
+				texture.wrapS = THREE.RepeatWrapping;
+				texture.wrapT = THREE.RepeatWrapping;
+				texture.repeat.set( 4, 4);
+
+				var textureNorm = THREE.ImageUtils.loadTexture("textures/176_norm.jpg");
+				textureNorm.wrapS = THREE.RepeatWrapping;
+				textureNorm.wrapT = THREE.RepeatWrapping;
+				textureNorm.repeat.set( 4, 4);
+
+				var uniforms = {texture1: { type: "t", value: texture}, textureN: { type: "t", value: textureNorm}};
 
 		
 	      		geometry1 = new THREE.BoxGeometry(1, 1, 1);
