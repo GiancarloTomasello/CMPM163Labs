@@ -42,3 +42,7 @@ A. (u x 8) - 1 = x
 B. (v x 8) - 1 = y
 
 C. White (2,1)
+
+# Lab 5
+
+Video: https://drive.google.com/file/d/1BiC99oQ1CA9CFCVMq9lRbLrXCgHWTOaj/view?usp=sharing
