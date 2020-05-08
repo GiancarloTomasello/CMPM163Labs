@@ -46,3 +46,29 @@ C. White (2,1)
 # Lab 5
 
 Video: https://drive.google.com/file/d/1BiC99oQ1CA9CFCVMq9lRbLrXCgHWTOaj/view?usp=sharing
+
+# Lab 6
+
+![](Lab6/Lab6_ScreenShot.PNG)
+
+Types of light:
+
+Point Light:Lights that emmit light in all directions from a given point and are unaffected by rotation.
+
+Directional Light: A light that simmulates being emmited from a source infinetly far away and is unaffected by position.
+
+Spot Light: A light that emmits in a cone shape that is affected by both rotation and position.
+
+Area Light: Emmits baked light in a rectangular shape that is effected by both rotation and position.
+
+Material:
+I created a gold like material using the built in unity shader. I choose a orangish yellow base color and rased both the metallic and roughness levels up closer to 1.
+
+Textures:
+1) I created the blue metal textured floor by using free texture maps from https://3dtextures.me/2020/05/04/metal-plate-042/ and applied them to the different slots on the basic material shader
+
+2)I created the wood planks textured cube by using free texture maps from https://3dtextures.me/2019/07/05/wood-planks-012/ and applied them to the different slots on the basic material shader
+
+Skybox:
+I created the sky box by creating 6 individual sky textures in photoshop. Then I made a new skybox texture and applied each texture to a different side of the skybox (weirdly the left and right sides are swithced in unity).
+
