@@ -1,6 +1,6 @@
 ﻿Shader "Custom/Waves"{
 	Properties{
-		_Color("Color", Color) = (0, 0, 0)
+		_Color("Color", Color) = (0, 0, 0, 1)
 		_Strength("Strength", Range(0, 10)) = 2.0
 		_Speed("Speed", Range(-200, 200)) = 100
 	}
@@ -52,3 +52,4 @@
 			}
 	}
 }
+
