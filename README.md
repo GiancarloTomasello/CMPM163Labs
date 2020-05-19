@@ -72,3 +72,9 @@ Textures:
 Skybox:
 I created the sky box by creating 6 individual sky textures in photoshop. Then I made a new skybox texture and applied each texture to a different side of the skybox (weirdly the left and right sides are swithced in unity).
 
+#Lab 7
+
+Video: https://drive.google.com/file/d/1SI0gKSeT-KRVFDCiZhvK2ciJa0csMxfz/view?usp=sharing
+
+Scene description:In my scene I have mountains that are split colors in the middle. I created the mountain by multiplying voronoi noise and gradient noise then exporting the outport into the y variable on each vertex. The color was created using a gradient node the uses position as the input. I also made a sphere that changes it's displacemnt and color as it moves. The displacement was used by combining voronoi noise (that takes the world position) multiplying it with a normal vector, then adding it to the objects position vector. The color was created by taking a sample of a gradient at a vertexes position for each vertex. FInally I also creted a water wave shader uning the shader language that takes the objects x positions and uses the cos of the x position and time to make the wave move through cycles.
+
