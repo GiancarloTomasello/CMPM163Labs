@@ -37,7 +37,7 @@ public class BuildCity : MonoBehaviour
             {
                 mapgrid[x, h] = -1;
             }
-            x += Random.Range(2, 10);
+            x += Random.Range(2, 5);
             if (x >= mapHeight) break;
         }
 
@@ -51,7 +51,7 @@ public class BuildCity : MonoBehaviour
                 else
                     mapgrid[w, z] = -2;
             }
-            z += Random.Range(2, 20);
+            z += Random.Range(2, 10);
             if (z >= mapHeight) break;
         }
 

@@ -329,11 +329,15 @@ MonoBehaviour:
   - {fileID: 141268, guid: b3d3a7ba5f4d42943920370ae1696723, type: 3}
   - {fileID: 147108, guid: 3d01ef65dd7df27469c08a5faaf917bd, type: 3}
   - {fileID: 151704, guid: 43cefcf568e58d84d802bbb3c6a74777, type: 3}
-  - {fileID: 100000, guid: 3a6923a1482b2e84599c596ff5d74c1b, type: 3}
-  - {fileID: 100000, guid: ecde5defbf8dfb34fb9fe3562bb81ce8, type: 3}
-  xstreets: {fileID: 0}
-  zstreets: {fileID: 0}
-  crossroads: {fileID: 0}
+  - {fileID: 189348, guid: d597a8fa6b192c545bbae896e4d42a21, type: 3}
+  - {fileID: 117616, guid: b2fcb4869e568194ebff11fc13530282, type: 3}
+  - {fileID: 7423136889353317665, guid: 8e5b6def6efc0ce489ae0a3a6a92de31, type: 3}
+  xstreets: {fileID: 5161171423110523178, guid: 92c6d33576db80d4a8d2fb9b45fb7721,
+    type: 3}
+  zstreets: {fileID: 4206697563871893604, guid: cb4d793f045356346a336bd1bff0d257,
+    type: 3}
+  crossroads: {fileID: 2887440735966613682, guid: 35ff808ff10bc824a9e497870738dd82,
+    type: 3}
   mapWidth: 20
   mapHeight: 20
 --- !u!4 &1990707927
@@ -390,7 +394,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133959958}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -401,7 +405,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: 2100000, guid: e7fa6b5f2e1ba3f41bddc137700933db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -438,8 +442,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133959958}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.3743, y: -41.102364, z: -61.76585}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalPosition: {x: 33.3743, y: -1.5, z: -61.76585}
+  m_LocalScale: {x: 30, y: 1, z: 30}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2

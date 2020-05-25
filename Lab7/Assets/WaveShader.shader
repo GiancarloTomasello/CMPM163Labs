@@ -35,7 +35,7 @@
 
 					float4 worldPos = mul(unity_ObjectToWorld, IN.vertex);
 
-					float displacement = (cos(worldPos.y) + cos(worldPos.x + (_Speed * _Time)));
+					float displacement = (cos(worldPos.y) + cos(worldPos.x + (_Speed * _Time.w)));
 					worldPos.y = worldPos.y + (displacement * _Strength);
 
 					o.pos = mul(UNITY_MATRIX_VP, worldPos);
