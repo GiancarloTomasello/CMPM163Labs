@@ -25,7 +25,7 @@ public class BuildCity : MonoBehaviour
         {
             for(int w = 0; w < mapWidth; w++)
             {
-                mapgrid[w, h] = (int)(Mathf.PerlinNoise(w / 10.0f, h / 10.0f));
+                mapgrid[w, h] = (int)(Mathf.PerlinNoise(w / 10.0f, h / 10.0f) * 10);
             }
         }
 
@@ -33,12 +33,12 @@ public class BuildCity : MonoBehaviour
         int x = 0;
         for(int n = 0; n < 50; n++)
         {
-            for(int h = 0; h < mapWidth; h++)
+            for(int h = 0; h < mapHeight; h++)
             {
                 mapgrid[x, h] = -1;
             }
             x += Random.Range(2, 10);
-            if (x >= mapWidth) break;
+            if (x >= mapHeight) break;
         }
 
         int z = 0;
