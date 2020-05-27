@@ -84,4 +84,5 @@ Tutorial Picture: ![](Lab7/TutorialCity.PNG)
 
 Inspiration Picture: ![](Lab7/venice.jpg)
 
-Generated City: ![](Lab7/Lab8-Practical.PNG)
+Generated City: I utilized the wave shader from the last lab to provide moving waves as well as changing the building gernation to lead to more long tightly pack strings of buildings.
+![](Lab7/Lab8-Practical.PNG)
